@@ -6,22 +6,18 @@ from pythoncode.calculator import calculator
 
 
 def get_adddatas_calc():
-
     # When you use the right mouse button to run the code, this code will succeed
     # with open('./datas/calc.yaml') as f:
 
     # When you use Terminal to run the code, this code will succeed
     with open('./testing/datas/calc.yaml') as f:
-
         tatols = yaml.safe_load(f)
     return (tatols['adddatas'], tatols['addids'])
 
 
 def get_divdatas_calc():
-
     # with open("./datas/calc.yaml") as f2:
     with open("./testing/datas/calc.yaml") as f2:
-
         tatolsdiv = yaml.safe_load(f2)
     return (tatolsdiv['divdatas'], tatolsdiv['divids'])
 
