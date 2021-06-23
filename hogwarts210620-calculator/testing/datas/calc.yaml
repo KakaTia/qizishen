@@ -1,0 +1,53 @@
+add:
+  int:
+    datas:
+      - - 1
+        - 1
+        - 2
+      - [ 100,100,200 ]
+      - [ -1,-2,-3 ]
+      - [ 0,1,1 ]
+      - [ 0,s,0 ]
+    ids:
+      - int
+      - bigint
+      - minus
+      - zero
+      - TypeError
+  float:
+    datas:
+      - [ 0.1,0.1,0.2 ]
+      - [ 0.1,0.2,0.3 ]
+    ids:
+      - float1
+      - float2
+div:
+  int:
+    datas:
+      - - 1
+        - 1
+        - 1
+      - [ -3,3,-1 ]
+      - [ 0,3,0 ]
+
+    ids:
+      - normal
+      - minus
+      - zero
+  Error:
+    datas:
+      - [ 100,0,1 ]
+      - [ 100,s, 0 ]
+
+    ids:
+      - division by zero
+      - TypeError
+
+
+  float:
+    datas:
+      - [ 3,1.55,1.94 ]
+      - [ 3,-1.55,-1.94 ]
+    ids:
+      - divfloat
+      - divminusfloat

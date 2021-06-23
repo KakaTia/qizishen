@@ -1,0 +1,3 @@
+[32mINFO    [0m root:conftest.py:12 开始计算
+[32mINFO    [0m root:test_calculator.py:43 浮点数加法运算：0.1+0.2相加 结果为0.3
+[32mINFO    [0m root:conftest.py:15 结束计算

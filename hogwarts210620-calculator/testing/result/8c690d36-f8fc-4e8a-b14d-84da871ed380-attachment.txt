@@ -1,0 +1,3 @@
+[32mINFO    [0m root:conftest.py:12 开始计算
+[32mINFO    [0m root:test_calculator.py:69 异常情况除法运算：100/0相加 结果ZeroDivisionError异常,除数不能为0
+[32mINFO    [0m root:conftest.py:15 结束计算

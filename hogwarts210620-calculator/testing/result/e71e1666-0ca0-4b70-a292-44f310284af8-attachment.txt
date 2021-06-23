@@ -1,0 +1,3 @@
+[32mINFO    [0m root:conftest.py:12 开始计算
+[32mINFO    [0m root:test_calculator.py:54 整数除法运算：1/1相加 结果为1
+[32mINFO    [0m root:conftest.py:15 结束计算
