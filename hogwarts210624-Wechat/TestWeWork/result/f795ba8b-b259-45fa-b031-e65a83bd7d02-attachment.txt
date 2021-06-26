@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_wework.py:110 添加成员qiming4信息
+[32mINFO    [0m root:test_wework.py:144 qiming4的成员邮箱89717041@qq.com已被占有，截图保存在allure报告中

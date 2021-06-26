@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_wework.py:110 添加成员qiming信息
+[32mINFO    [0m root:test_wework.py:134 qiming的成员账号433301信息已被占有，截图保存在allure报告中

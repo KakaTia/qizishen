@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_wework.py:110 添加成员qiming5信息
+[32mINFO    [0m root:test_wework.py:122 qiming5的成员邮箱地址不正确123，截图保存在allure报告中

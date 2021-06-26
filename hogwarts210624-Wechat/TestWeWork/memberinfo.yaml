@@ -1,0 +1,20 @@
+info:
+    - [yancheng,yc,433301,13048766901,89717041@qq.com,nomal]
+    - [qiming,Eric1,433302,13048766902,89717042@qq.com,nomal2]
+    - [phonenameempyt,Eric3,433303,13048766904,89717044@qq.com,phonenameempyt]
+    - [qiming,Eric1,433301,13048766903,89717043@qq.com,acctidexsit]
+    - [qiming3,Eric4,433304,13048766901,89717046@qq.com,phoneexsit]
+    - [qiming4,Eric5,433305,13048766906,89717041@qq.com,mailexsit]
+    - [qiming5,Eric5,433308,13048766906,123,mailFAIL]
+    - [nameempyt,yc1,433309,13048766908,89717049@qq.com,nameempyt]
+
+ids:
+    - nomal
+    - nomal2
+    - phonenameempyt
+    - acctidexsit
+    - phoneexsit
+    - mailexsit
+    - mailFAIL
+    - nameempyt
+

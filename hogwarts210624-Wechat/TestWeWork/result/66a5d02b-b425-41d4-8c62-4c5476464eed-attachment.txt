@@ -1,0 +1,1 @@
+[32mINFO    [0m root:test_wework.py:97 点击保存后，phonenameempyt的手机和邮箱不能同时为空，截图保存在allure报告中
