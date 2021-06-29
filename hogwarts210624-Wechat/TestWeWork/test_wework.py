@@ -73,38 +73,38 @@ class Testwework():
             # 等待
          # 手机和邮箱不能同时为空，请更改信息，截图保存在allure报告中
 
-        with allure.step(f"{name}的手机和邮箱不能同时为空，截图保存在allure报告中"):
+
             if name == 'nameempyt':
                 driver.find_element(By.ID, 'memberAdd_acctid').send_keys(acctid)
+                with allure.step(f"{name}的为空，截图保存在allure报告中"):
+                    logging.info(f"{name}的为空，截图保存在allure报告中")
+                    driver.find_element(By.LINK_TEXT, '保存').click()
 
-                logging.info(f"点击保存后，{name}的为空，截图保存在allure报告中")
-                driver.find_element(By.LINK_TEXT, '保存').click()
-
-                # driver.find_elements_by_xpath("//*[contains(text(), '手机和邮箱不能同时为空')]")
-                time.sleep(1)
-                driver.save_screenshot(f"./TestWeWork/screenshots/请检查用户-{acctid}的name为空.png")
-                allure.attach.file(fr'./TestWeWork/screenshots/请检查用户-{acctid}的name为空.png',
-                                   attachment_type=allure.attachment_type.PNG)
-                driver.find_element(By.LINK_TEXT, '取消').click()
-                assert expect == 'nameempyt'
+                    # driver.find_elements_by_xpath("//*[contains(text(), '手机和邮箱不能同时为空')]")
+                    time.sleep(1)
+                    driver.save_screenshot(f"./TestWeWork/screenshots/请检查用户-{acctid}的name为空.png")
+                    allure.attach.file(fr'./TestWeWork/screenshots/请检查用户-{acctid}的name为空.png',
+                                       attachment_type=allure.attachment_type.PNG)
+                    driver.find_element(By.LINK_TEXT, '取消').click()
+                    assert expect == 'nameempyt'
 
             elif name == 'phonenameempyt':
+                with allure.step(f"{name}的手机和邮箱不能同时为空，截图保存在allure报告中"):
+                    driver.find_element(By.ID, 'username').send_keys(name)
+                    driver.find_element(By.ID, 'memberAdd_english_name').send_keys(englishname)
+                    driver.find_element(By.ID, 'memberAdd_acctid').send_keys(acctid)
 
-                driver.find_element(By.ID, 'username').send_keys(name)
-                driver.find_element(By.ID, 'memberAdd_english_name').send_keys(englishname)
-                driver.find_element(By.ID, 'memberAdd_acctid').send_keys(acctid)
+                    logging.info(f"{name}的手机和邮箱不能同时为空，截图保存在allure报告中")
+                    driver.find_element(By.LINK_TEXT, '保存').click()
 
-                logging.info(f"点击保存后，{name}的手机和邮箱不能同时为空，截图保存在allure报告中")
-                driver.find_element(By.LINK_TEXT, '保存').click()
-
-                # driver.find_elements_by_xpath("//*[contains(text(), '手机和邮箱不能同时为空')]")
-                time.sleep(1)
-                driver.save_screenshot(f"./TestWeWork/screenshots/请检查用户-{name}手机和邮箱不能同时为空.png")
-                allure.attach.file(fr'./TestWeWork/screenshots/请检查用户-{name}手机和邮箱不能同时为空.png',
-                                   attachment_type=allure.attachment_type.PNG)
-                driver.find_element(By.LINK_TEXT, '取消').click()
-                assert expect == 'phonenameempyt'
-                time.sleep(1)
+                    # driver.find_elements_by_xpath("//*[contains(text(), '手机和邮箱不能同时为空')]")
+                    time.sleep(1)
+                    driver.save_screenshot(f"./TestWeWork/screenshots/请检查用户-{name}手机和邮箱不能同时为空.png")
+                    allure.attach.file(fr'./TestWeWork/screenshots/请检查用户-{name}手机和邮箱不能同时为空.png',
+                                       attachment_type=allure.attachment_type.PNG)
+                    driver.find_element(By.LINK_TEXT, '取消').click()
+                    assert expect == 'phonenameempyt'
+                    time.sleep(1)
             else:
 
                 logging.info(f"添加成员{name}信息")
