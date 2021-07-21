@@ -1,0 +1,4 @@
+2021-07-21 17:54:53 [INFO] 发送post请求-创建张三成员 (contact.py:13)
+2021-07-21 17:54:54 [INFO] 发送post请求-更新id为zhangsan的李四成员的名字 (contact.py:25)
+2021-07-21 17:54:54 [INFO] 发送post请求-获取id为zhangsan的成员信息 (contact.py:31)
+2021-07-21 17:54:55 [INFO] 发送post请求-删除id为zhangsan的成员信息 (contact.py:37)
